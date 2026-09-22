@@ -29,6 +29,7 @@ Para este ejercicio se generaron 2000 valores de entrada en el intervalo ([-1,1]
 $$
 f(x)=1+2x+4x^3
 $$
+
 La función utilizada combina términos constante, lineal y cúbico, por lo que presenta un comportamiento no lineal.
 Se entrenó una red neuronal densa para aproximar esta relación a partir de los datos generados.
 Durante las primeras pruebas se obtuvo una pérdida elevada, por lo que se revisó la implementación y se corrigió la generación de los valores de salida. Después de la corrección, el modelo logró aproximarse adecuadamente a la función objetivo.
@@ -38,13 +39,17 @@ Para cada función se muestra la comparación entre la función original y la ap
 ### Problema 3. Capa entrenable
 
 En este ejercicio se utilizó una estructura cuyos parámetros permiten representar una función de la forma:
+
 $$
 f(x) = a_0 + a_1x + a_2x^2 + a_3x^3
 $$ 
+
 El objetivo es ajustar los parámetros del modelo para aproximar la función:
+
 $$
 y = \cos(2x)
 $$
+
 A diferencia de los ejercicios anteriores, aquí la estructura del modelo está relacionada directamente con un polinomio de tercer grado.
 El entrenamiento permite observar cómo los parámetros se modifican para minimizar la diferencia entre los valores predichos y los valores reales.
 
@@ -54,11 +59,13 @@ Se utilizaron redes neuronales para aproximar las soluciones de ecuaciones difer
 
 #### 4(a)
 Se trabajó con la ecuación diferencial:
+
 $$
 xy'+y=x^2\cos(x)
 $$
 
 con la condición inicial:
+
 $$
 y(0)=0
 $$
@@ -68,9 +75,11 @@ Este ejercicio permite observar una aplicación diferente de las redes neuronale
 
 #### 4(b)
 En el segundo problema se continuó con la aplicación de redes neuronales para aproximar la solución de la ecuación diferencial.
+
 $$
 y''=-y, \qquad y(0)=1,\qquad y'(0)=-0.5
 $$
+
 Se construyó el modelo considerando la ecuación diferencial correspondiente y las condiciones necesarias para obtener una solución consistente.
 El entrenamiento busca minimizar el error asociado al cumplimiento de la ecuación, permitiendo que la red neuronal encuentre una función que se aproxime a la solución buscada.
 
